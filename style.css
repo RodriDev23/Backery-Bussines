@@ -11,7 +11,6 @@ body {
     margin: 0 auto;
     color: white;
     font-family: 'SF Pro Display', sans-serif;
-    background-color: #E8D8D8;
 }
 
 .nav-container {
@@ -20,7 +19,7 @@ body {
     justify-content: space-around;
     width: 100%;
     height: 9vh;
-    background: #5D405A;
+    background: linear-gradient(to bottom, black, #2E1F2E);
     color: white;
 
 
@@ -62,63 +61,516 @@ li {
 }
 
 .presentation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .img-presentation {
-    flex: 0 0 50%;
-    margin-top: 10vh;
-  }
-  
-  .img-presentation > img {
-    width: 90%;
-  }
-  
-  .presentation-text {
-    flex: 0 0 50%;
-    text-align: left;
-    margin-left: 20vh;
-    font-size: 60px;
-    gap: 20vh;
-    color: #5D405A;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+ background: linear-gradient(to bottom, #2E1F2E, #462f46);
+}
+
+.img-presentation {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-presentation > img {
+  max-width: 80%;
+  margin-top: 10vh;
+}
+
+.presentation-text {
+  flex: 0 0 50%;
+  text-align: left;
+  padding: 0 20vh;
+  font-size: 60px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .button-presentation {
-    padding: 15px;
-    border: none;
-    font-size: 20px;
-    margin-top: 12vh;
-    background-color: #5D405A;
-    color: white;
-    border-radius: 15px;
+  padding: 15px;
+  border: none;
+  font-size: 30px;
+  margin-top: 2vh;
+  background-color: #5D405A;
+  color: white;
+  border-radius: 15px;
 }
 
-.button-presentation:hover{
-    background-color:#5D405A
+.button-presentation:hover {
+  background-color: #674257;
 }
+
 
 
 .text-about {
-    margin-top: 20vh;
-    display: flex;
-    justify-content:center;
-    margin-left: 40vh;
-    align-items: center;
-    height: 70vh;
-    max-width: 1200px;
-    color: #5D405A;
+  background: linear-gradient(to bottom, #462f46, #42303d);
+  margin-top: -2vh;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height: 70vh;
+  color: #ac62a4;
+  max-width: 100%;
+  font-weight: bold;
+}
+
+.text-about p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  max-width: 90%;
+  font-size: 50px;
+  margin-left: 210px;
+}
+
+ 
+
+.advantages {
+  background: linear-gradient(to bottom, #42303d, #2E1F2E);
+  padding: 200px 20px;
+  color: white;
+
+}
+
+.advantages h2 {
+  color: white;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.advantages p {
+  color: white;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.advantages div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.advantages div > div {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-basis: 30%;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.advantages div > div:hover {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.advantages div > div img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.advantages div > div h2 {
+  color: #333;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.advantages div > div p {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+
+.contact-us {
+  background: linear-gradient(to bottom, #2E1F2E, black);
+  color: white;
+  padding: 50px;
+}
+
+.contact-us h2 {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-us div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.contact-us div div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us div div h2 {
+  font-size: 24px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.contact-us div div img {
+  width: 100%;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.contact-us div div h2:last-of-type {
+  margin-bottom: 20px;
+}
+
+
+.footer {
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.footer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.footer a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+.advantages-square {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-square img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.advantages-square h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.advantages-square p {
+  font-size: 14px;
+}
+
+
+.contact-us {
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-size: 20px;
+}
+
+.contact-us h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-us .location-boxes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+ 
+}
+
+.contact-us .location-box {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.contact-us .location-box h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.contact-us .location-box .location-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-us .location-box .location-icon img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.contact-us .location-box .location-icon h2 {
+  font-size: 30px;
+  margin: 0;
+}
+
+
+/* Styles for screens up to 480px (Phones) */
+@media only screen and (max-width: 480px) {
+  .nav-container {
+    display: none;
   }
-  
+
+  .presentation {
+    flex-direction: column;
+  }
+
+  .img-presentation {
+    flex: 0 0 80%;
+  }
+
+  .presentation-text {
+    flex: 0 0 100%;
+    padding: 0 10%;
+    font-size: 24px;
+    text-align: center;
+    padding-top: 12vh;
+    padding-bottom: 5vh;
+  }
+
+  .button-presentation {
+    font-size: 18px;
+  }
+
   .text-about p {
+    font-size: 37px;
+    margin-left: 10px;
+
+  }
+
+  .advantages div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages div > div {
+    flex-basis: 80%;
+    margin-bottom: 20px;
+  }
+
+  .advantages div > div h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .advantages div > div p {
+    font-size: 14px;
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-us h2 {
+    font-size: 40px;
+    
+  }
+
+  .contact-us .location-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+  }
+
+  .contact-us .location-box {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+
+  .contact-us .location-box h2 {
+    font-size: 30px;
+  }
+
+  .contact-us .location-box .location-icon h2 {
+    font-size: 34px;
+    
+  }
+  #location-1 {
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: normal;
+  }
+  #location-2 {
+    text-decoration: underline;
+    font-size: 40px;
+    font-weight: normal;
+  }
+}
+
+
+
+/* Styles for screens between 481px and 767px (Small Tablets) */
+/* Styles for screens between 481px and 1023px (Tablets) */
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav-right {
+    margin: 10px 0;
+  }
+
+  .ul-nav {
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .presentation {
+    flex-direction: column;
+  }
+
+  .img-presentation {
+    flex: 0 0 80%;
+  }
+
+  .presentation-text {
+    flex: 0 0 100%;
+    padding: 0 10%;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 12vh;
+    padding-bottom: 5vh;
+  }
+
+  .button-presentation {
+    font-size: 24px;
+  }
+
+  .text-about p {
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+  .advantages div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages div > div {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .advantages div > div h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .advantages div > div p {
+    font-size: 14px;
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+  }
+
+  .contact-us h2 {
+    font-size: 40px;
+    
+  }
+
+  .contact-us .location-boxes {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: start;
-    max-width: 100%;
-    font-size: 50px;
+ 
   }
-  
+
+  .contact-us .location-box {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+
+  .contact-us .location-box h2 {
+    font-size: 30px;
+  }
+
+  .contact-us .location-box .location-icon h2 {
+    font-size: 34px;
+    
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .nav-right {
+    margin-right: 20px;
+  }
+
+  .ul-nav {
+    margin-left: 20px;
+  }
+
+  .presentation-text {
+    padding: 0 10vh;
+    font-size: 36px;
+  }
+
+  .button-presentation {
+    font-size: 24px;
+  }
+
+  .text-about p {
+    font-size: 36px;
+    margin-left: 10px;
+  }
+
+  .advantages div > div h2 {
+    font-size: 18px;
+  }
+
+  .advantages div > div p {
+    font-size: 14px;
+  }
+
+  .contact-us h2 {
+    font-size: 30px;
+  }
+
+  .contact-us .location-box h2 {
+    font-size: 24px;
+  }
+
+  .contact-us .location-box .location-icon h2 {
+    font-size: 28px;
+  }
+}
+
+
+
